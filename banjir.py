@@ -60,7 +60,4 @@ st.dataframe(std_data)
 st.subheader("Dataset:")
 st.dataframe(databanjir)
 
-# Display some statistics
-st.subheader("Statistics:")
-st.write(databanjir.describe())
 
