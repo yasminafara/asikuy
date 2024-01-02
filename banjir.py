@@ -64,7 +64,3 @@ st.dataframe(databanjir)
 st.subheader("Statistics:")
 st.write(databanjir.describe())
 
-# Display correlation heatmap
-st.subheader("Correlation Heatmap:")
-st.image('correlation_heatmap.png',
-         caption='Correlation Heatmap', use_column_width=True)
