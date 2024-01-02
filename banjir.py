@@ -21,7 +21,7 @@ classifier.fit(X, Y)
 joblib.dump(classifier, 'svm_model.sav')
 
 # Streamlit UI
-st.title("Potential Flooding Prediction App")
+st.title("Prediksi Kenaikan Air Laut terhadap Banjir")
 
 st.sidebar.header("User Input")
 st.sidebar.markdown(
