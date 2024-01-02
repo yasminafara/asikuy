@@ -1,7 +1,7 @@
 import pickle
 import numpy as np
 import streamlit as st
-
+from keras.models import load_model
 st.title('Prediksi Kenaikan Permukaan Air Laut Terhadap Banjir')                         
 
 TinggiLaut = st.text_input('Ketinggian Laut')      
