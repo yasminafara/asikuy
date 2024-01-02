@@ -2,7 +2,6 @@ import pickle
 import numpy as np
 import streamlit as st
 
-model = pickle.load(open('svm1.sav,'rb'))
 st.title('Prediksi Kenaikan Permukaan Air Laut Terhadap Banjir')                         
 
 TinggiLaut = st.text_input('Ketinggian Laut')      
