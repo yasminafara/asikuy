@@ -32,7 +32,7 @@ tinggi_laut = st.sidebar.slider(
     "Prediksi Muka Laut", min_value=1.0, max_value=2.0, step=0.1, value=1.5)
 kecepatan_angin = st.sidebar.slider(
     "Kecepatan Angin", min_value=0, max_value=25, value=15)
-gangguan_cuaca = st.sidebar.selectbox("Gangguan Cuaca", [0, 1])
+gangguan_cuaca = st.sidebar.selectbox("Gangguan Cuaca (Gangguan Cuaca Atmosfer)", [0, 1])
 gelombang = st.sidebar.slider(
     "Gelombang", min_value=0.5, max_value=2.0, step=0.25, value=1.0)
 astronomi = st.sidebar.selectbox("Peristiwa Astronomi (Peristiwa astronomi seperti gerhana)", [0, 1])
