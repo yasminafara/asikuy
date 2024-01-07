@@ -21,7 +21,7 @@ classifier.fit(X, Y)
 joblib.dump(classifier, 'svm_model.sav')
 
 # Streamlit UI
-st.title("Prediksi Kenaikan Air Laut terhadap Banjir")
+st.title("Prediksi Kenaikan Air Laut terhadap Banjir Rob")
 
 st.sidebar.header("User Input")
 st.sidebar.markdown(
@@ -29,13 +29,13 @@ st.sidebar.markdown(
 
 # User input
 tinggi_laut = st.sidebar.slider(
-    "Sea Level", min_value=1.0, max_value=2.0, step=0.1, value=1.5)
+    "Prediksi Muka Laut", min_value=1.0, max_value=2.0, step=0.1, value=1.5)
 kecepatan_angin = st.sidebar.slider(
-    "Wind Speed", min_value=0, max_value=25, value=15)
-gangguan_cuaca = st.sidebar.selectbox("Weather Disturbance", [0, 1])
+    "Kecepatan Angin", min_value=0, max_value=25, value=15)
+gangguan_cuaca = st.sidebar.selectbox("Gangguan Cuaca", [0, 1])
 gelombang = st.sidebar.slider(
-    "Wave Height", min_value=0.5, max_value=2.0, step=0.25, value=1.0)
-astronomi = st.sidebar.selectbox("Astronomical Factors", [0, 1])
+    "Gelombang", min_value=0.5, max_value=2.0, step=0.25, value=1.0)
+astronomi = st.sidebar.selectbox("Peristiwa Astronomi (Peristiwa astronomi seperti gerhana)", [0, 1])
 
 # Make prediction
 input_data = np.array([tinggi_laut, kecepatan_angin,
